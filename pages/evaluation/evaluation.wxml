@@ -1,0 +1,24 @@
+<!--pages/evaluation/evaluation.wxml-->
+<!-- 文字编辑区域 开始 -->
+<view class="text">
+    <view class="input">
+        <textarea placeholder='请写下你对订单的评价' minlength="{{min}}" maxlength="{{max}}" bindinput="inputs"></textarea>
+        <text class="text-show">{{currentWordNumber}}/{{max}}</text>
+    </view>
+    <view class="footer">
+        <view class="img center">
+            <view class="center">
+                <image src="/pages/img/center/camer.png"></image>
+            </view>
+        </view>
+        <view class="img center">
+            <view class="center">
+                <image src="/pages/img/center/add.png"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 文字编辑区域 结束 -->
+<!-- 底部按钮 开始 -->
+<button class="button" formType="submit">确定</button>
+<!-- 底部按钮 结束 -->

@@ -1,0 +1,57 @@
+<!--pages/search/search.wxml-->
+<!-- 头部搜索框 开始 -->
+<view class="head center">
+<navigator hover-class="none" url="/pages/search-search/search-search">
+    <view class="headInput">
+        <image src="/pages/img/search/suosou.png"></image>
+        <text>搜索商品</text>
+        
+    </view>
+    </navigator>
+</view>
+<!-- 头部搜索框 结束 -->
+<!-- 主要展示页开始 -->
+<view class="content">
+    <view class="index">
+        <!-- 侧边栏 开始 -->
+        <view class="index-left">
+            <scroll-view scroll-with-animation="true" scroll-y style="height:100vh;" scroll-top="{{leftToTop}}">
+                <view wx:for="{{constants}}" wx:key="id" bindtap="jumpTo" data-id="{{item.id}}" style="background: {{item.id === currentLeftSelect ? '#fff' : ''}}" class="index-left-text">
+                    <view id="{{item.id}}">
+                        <text>{{item.name}}</text>
+                        <text class="{{item.id === currentLeftSelect ? 'active' : ''}}"></text>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+        <!-- 侧边栏 结束 -->
+        <!-- 商品展览 开始 -->
+        <view class="index-right">
+            <scroll-view scroll-with-animation="true" scroll-y style="height: 100vh;" bindscroll="rightScroll" scroll-into-view="{{toView}}" bindscrolltolower="lower">
+                <view wx:for="{{constants}}" wx:key="id" id="{{item.id}}" class="index-right-content">
+                    <view class="index-right-text-top center">-{{item.name}}-</view>
+                    <view class="index-right-text" wx:for="{{item.category}}" wx:key="category_id">
+                        <navigator hover-class="none"  url="/pages/goodsShow/goodsShow">
+                            <view class="goods" style="">
+                                <image src="{{item.url}}"></image>
+                                <view class="cotent">
+                                    <view class="cotentTitle">
+                                        <text>{{item.title}}</text>
+                                    </view>
+                                    <view class="cotentCotent overText">
+                                        <text>{{item.text}}</text>
+                                    </view>
+                                    <view>
+                                        <text class="money">¥<text>{{item.price}}</text></text>
+                                    </view>
+                                </view>
+                            </view>
+                        </navigator>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+    <!-- 商品展览 结束 -->
+</view>
+<!-- 主要展示页 结束 -->

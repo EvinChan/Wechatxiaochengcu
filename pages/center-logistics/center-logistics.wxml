@@ -1,0 +1,39 @@
+<!--pages/center-logistics/center-logistics.wxml-->
+<!-- 物流头部 开始 -->
+<view class="log-head">
+    <view class="user-text">
+        <view bindtap="address">
+            <view style="margin-bottom:10rpx; font-weight: bold; font-size:30rpx;">
+                <text decode="ture">13631531230&nbsp;&nbsp;老王&nbsp;&nbsp;收</text>
+            </view>
+            <view>广东省佛山市三水区乐平镇范湖开发区广州工商学院菜鸟驿站</view>
+        </view>
+    </view>
+</view>
+<!-- 物流头部 结束 -->
+<!-- 物流信息展示 开始 -->
+<view class="log-show center">
+    <view class="log-show-head">
+        <view>交易单单号：123456789</view>
+        <view style="color:#e96a3a;">已发货</view>
+    </view>
+    <view class="log-show-goods">
+        <image src="https://i1.mifile.cn/a1/pms_1565339457.36822589!80x80.jpg"></image>
+        <view class="log-show-goods-text">
+            <view>米家无线开关</view>
+            <view>类别：电子产品</view>
+        </view>
+    </view>
+    <view class="log-show-message">
+        <view class="log-show-message-log">
+            <view>物流单号：1235649798</view>
+            <button>复制</button>
+        </view>
+        <view>下单时间：15:42</view>
+        <view>快递公司：顺丰快递</view>
+        <view>
+            <button>查询物流</button>
+        </view>
+    </view>
+</view>
+<!-- 物流信息展示 结束 -->

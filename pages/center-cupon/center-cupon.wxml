@@ -1,0 +1,146 @@
+<view class="details-swiper-tab">
+    <view class="details-swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">全部</view>
+    <view class="details-swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">可使用</view>
+    <view class="details-swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">已使用</view>
+    <view class="details-swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">已过期</view>
+</view>
+
+<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab" style='height:100%;'>
+    <!-- 全部 开始 -->
+    <swiper-item style='height:100%;'>
+        <scroll-view scroll-y="true" scroll-top="50" scroll-with-animation="ture" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" style="height:100%;">
+            <view class="content">
+                <view class="content-left">
+                    <view>
+                        <text style="font-size:40rpx;">¥</text>
+                        <text style="font-size:100rpx;">15</text>
+                    </view>
+                    <view class="content-left-content">
+                        <view style="margin-left:-50rpx;">优惠券</view>
+                        <view>满100可用</view>
+                    </view>
+                </view>
+                <view class="content-right">
+                    <view>使用日期</view>
+                    <view class="content-right-time">2019-10-10~2019-12-12</view>
+                </view>
+            </view>
+
+            <view class="contented">
+                <view class="contented-left">
+                    <view>
+                        <text style="font-size:40rpx;">¥</text>
+                        <text style="font-size:100rpx;">15</text>
+                    </view>
+                    <view class="contented-left-content">
+                        <view style="margin-left:-50rpx;">优惠券</view>
+                        <view>满100可用</view>
+                    </view>
+                </view>
+                <view class="contented-right">
+                    <view>使用日期</view>
+                    <view class="contented-right-time">2019-10-10~2019-12-12</view>
+                </view>
+                <view class="contented-img">
+                    <image src="http://localhost:8080/img/cupon/优惠券已使用印.png"></image>
+                </view>
+            </view>
+
+            <view class="contented">
+                <view class="contented-left">
+                    <view>
+                        <text style="font-size:40rpx;">¥</text>
+                        <text style="font-size:100rpx;">15</text>
+                    </view>
+                    <view class="contented-left-content">
+                        <view style="margin-left:-50rpx;">优惠券</view>
+                        <view>满100可用</view>
+                    </view>
+                </view>
+                <view class="contented-right">
+                    <view>使用日期</view>
+                    <view class="contented-right-time">2019-10-10~2019-12-12</view>
+                </view>
+                <view class="contented-img">
+                    <image src="http://localhost:8080/img/cupon/优惠券已过期印.png"></image>
+                </view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <!-- 全部 结束 -->
+
+    <!-- 可使用 开始 -->
+    <swiper-item style='height:100%;'>
+        <scroll-view scroll-y="true" scroll-top="50" scroll-with-animation="ture" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" style="height:100%;">
+            <view class="content">
+                <view class="content-left">
+                    <view>
+                        <text style="font-size:40rpx;">¥</text>
+                        <text style="font-size:100rpx;">15</text>
+                    </view>
+                    <view class="content-left-content">
+                        <view style="margin-left:-50rpx;">优惠券</view>
+                        <view>满100可用</view>
+                    </view>
+                </view>
+                <view class="content-right">
+                    <view>使用日期</view>
+                    <view class="content-right-time">2019-10-10~2019-12-12</view>
+                </view>
+            </view>
+            
+        </scroll-view>
+    </swiper-item>
+    <!-- 可使用 结束 -->
+
+    <!-- 已使用 开始 -->
+    <swiper-item style='height:100%;'>
+        <scroll-view scroll-y="true" scroll-top="50" scroll-with-animation="ture" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" style="height:100%;">
+            <view class="contented">
+                <view class="contented-left">
+                    <view>
+                        <text style="font-size:40rpx;">¥</text>
+                        <text style="font-size:100rpx;">15</text>
+                    </view>
+                    <view class="contented-left-content">
+                        <view style="margin-left:-50rpx;">优惠券</view>
+                        <view>满100可用</view>
+                    </view>
+                </view>
+                <view class="contented-right">
+                    <view>使用日期</view>
+                    <view class="contented-right-time">2019-10-10~2019-12-12</view>
+                </view>
+                <view class="contented-img">
+                    <image src="http://localhost:8080/img/cupon/优惠券已使用印.png"></image>
+                </view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <!-- 已使用 结束 -->
+    <!-- 已过期 开始 -->
+    <swiper-item style='height:100%;'>
+        <scroll-view scroll-y="true" scroll-top="50" scroll-with-animation="ture" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" style="height:100%;">
+            <view class="contented">
+                <view class="contented-left">
+                    <view>
+                        <text style="font-size:40rpx;">¥</text>
+                        <text style="font-size:100rpx;">15</text>
+                    </view>
+                    <view class="contented-left-content">
+                        <view style="margin-left:-50rpx;">优惠券</view>
+                        <view>满100可用</view>
+                    </view>
+                </view>
+                <view class="contented-right">
+                    <view>使用日期</view>
+                    <view class="contented-right-time">2019-10-10~2019-12-12</view>
+                </view>
+                <view class="contented-img">
+                    <image src="http://localhost:8080/img/cupon/优惠券已过期印.png"></image>
+                </view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <!-- 已过期 结束 -->
+</swiper>

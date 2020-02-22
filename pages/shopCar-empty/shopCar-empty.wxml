@@ -1,0 +1,6 @@
+<!--pages/shopCar-empty/shopCar-empty.wxml-->
+<image src="/pages/img/center/购物车空.png"></image>
+<view class="title">你的购物车有点寂寞哦！</view>
+<!-- <view class="tips">你还没有进行任何的购物，快去买点东西吧！</view> -->
+<button class="button-orange">去购物</button>
+<!-- <button class="button-write">返回首页</button> -->

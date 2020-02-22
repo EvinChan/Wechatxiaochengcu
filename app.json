@@ -1,0 +1,63 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/search/search",
+        "pages/shopCar/shopCar",
+        "pages/center/center",
+        "pages/center-buyedList/center-buyedList",
+        "pages/center-center/center-center",
+        "pages/center-cupon/center-cupon",
+        "pages/center-setting/center-setting",
+        "pages/search-search/search-search",
+        "pages/goodsShow/goodsShow",
+        "pages/goodsShow-evaluation/goodsShow-evaluation",
+        "pages/buyed/buyed",
+        "pages/news/news",
+        "pages/evaluation/evaluation",
+        "pages/center-number/center-number",
+        "pages/center-service/center-service",
+        "pages/center-logistics/center-logistics",
+        "pages/shopCar-empty/shopCar-empty",
+        "pages/center-buyedList-empty/center-buyedList-empty",
+        "pages/login/login"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "小白商城",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#666",
+        "selectedColor": "#e43c20",
+        "borderStyle": "white",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "pages/img/index/home_hover.png",
+                "selectedIconPath": "pages/img/index/home.png"
+            },
+            {
+                "pagePath": "pages/search/search",
+                "text": "分类",
+                "iconPath": "pages/img/index/search.png",
+                "selectedIconPath": "pages/img/index/search-hover.png"
+            },
+            {
+                "pagePath": "pages/shopCar/shopCar",
+                "text": "购物车",
+                "iconPath": "pages/img/index/shopCar.png",
+                "selectedIconPath": "pages/img/index/shopCar_hover.png"
+            },
+            {
+                "pagePath": "pages/center/center",
+                "text": "个人中心",
+                "iconPath": "pages/img/index/center.png",
+                "selectedIconPath": "pages/img/index/center_hover.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,12 @@
+/* pages/center-number/center-number.wxss */
+Page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+text{
+    margin-top: 300rpx;
+    font-size: 40rpx;
+    color: #a3a3a3;
+}

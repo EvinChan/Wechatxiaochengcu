@@ -1,0 +1,430 @@
+<!--pages/goodsShow/goodsShow.wxml-->
+<!-- 头部开始 -->
+<view class="head">
+    <swiper indicator-dots="ture" indicator-color="rgba(113,113,113,0.6)" indicator-active-color="#fff" autoplay="ture" interval="3500" duration="250" circular="ture">
+        <swiper-item>
+            <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/538f19801c5a501e0e307d98677d752d.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e2d10fb82dcd525351085444dd21effe.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e2843cbfcf8e23666612a0b95fa498a4.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/65e3e2dcce852b09bd0e35d2425b2e9c.jpg"></image>
+        </swiper-item>
+
+    </swiper>
+    <view class="head-content">
+        <view class="head-content-title">米家无线开关</view>
+        <view class="head-content-center overText">6400万，潮流色2.5D玻璃机身更小下巴，更窄边框90%高屏占比,“眼影光”渐隐设计*和2.5D玻璃更窄边框，更窄下巴带来90%屏占比*</view>
+        <view class="head-content-price">
+            <text decode='true'>¥9.9&nbsp;&nbsp;&nbsp;<text style="color:#9999;font-size:20rpx;text-decoration: line-through;">¥19.9</text></text>
+        </view>
+    </view>
+</view>
+<!-- 头部 结束 -->
+
+<!-- 地址 开始 -->
+<view class="address">
+    <view class="address-target" bindtap="address">
+        <view class="cell-items" style="padding-bottom:10rpx;">
+            <text style="font-size: 28rpx;color: rgba(46, 46, 46, 0.6);" decode="ture">送至&nbsp;&nbsp;&nbsp;</text>
+            <text class="overText">广东省佛山市三水区乐平范湖广州工商学院</text>
+        </view>
+    </view>
+    <view class="address-cupon">
+        <view class="cell-items" style="padding-bottom:10rpx;">
+            <view>
+                <text style="font-size: 28rpx;color: rgba(46, 46, 46, 0.6);" decode="ture">优惠券&nbsp;&nbsp;&nbsp;</text>
+            </view>
+            <view class="cupon">
+                <view class="cupon-hide{{showView?'':'cupon-show'}}" bindtap="onChangeCuponShowState">满100减20</view>
+                <view class="cupon-hide{{showView?'':'cupon-show'}}" bindtap="onChangeCuponShowState">满100减20</view>
+            </view>
+        </view>
+    </view>
+    <view class="address-selected">
+        <view class="cell-items" style="padding-bottom:10rpx;" bindtap="onChangeChooseGoodsShowState">
+            <text style="font-size: 28rpx;color: rgba(46, 46, 46, 0.6);" decode="ture">已选&nbsp;&nbsp;&nbsp;</text>
+            <text class="overText">小白米家白色</text>
+        </view>
+    </view>
+    <view class="address-commitment">
+        <view class="address-commitment-footer">
+            <icon type="success" size="24rpx" color="#eb5419"></icon>
+            <text decode="ture">&nbsp;7天退货</text>
+        </view>
+        <view class="address-commitment-footer">
+            <icon type="success" size="24rpx" color="#eb5419"></icon>
+            <text decode="ture">&nbsp;品质保障</text>
+        </view>
+        <view class="address-commitment-footer">
+            <icon type="success" size="24rpx" color="#eb5419"></icon>
+            <text decode="ture">&nbsp;快速发货</text>
+        </view>
+    </view>
+</view>
+<!-- 地址 结束 -->
+
+<!-- 相关推荐 开始 -->
+<view class="recommended">
+    <view class="section section_gap">
+        <view class="recommended-title">相关推荐</view>
+        <scroll-view class="scroll-view_H" scroll-x="true">
+            <view class="scroll-view-item_H" wx:for="{{goodsMessage}}" wx:key="{{item}}" data-pic="{{item.url}}" data-title="{{item.title}}" data-avatar="{{item.avatar}}" data-name="{{item.name}}" data-fee="{{item.fee}}" bindtap="#">
+                <navigator hover-class="none" url="/pages/goodsShow/goodsShow">
+                    <view class="goods">
+                        <image src="{{item.url}}"></image>
+                        <view class="cotent">
+                            <view class="cotentTitle">
+                                <text>{{item.title}}</text>
+                            </view>
+                            <view class="cotentCotent overText">
+                                <text>{{item.text}}</text>
+                            </view>
+                            <view>
+                                <text class="money">¥<text>{{item.price}}</text></text>
+                            </view>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+<!-- 相关推荐 结束 -->
+
+<!-- 用户评价 开始 -->
+<view class="evaluation">
+    <view class="evaluation-head">
+        <view class="cell-items" style="padding-bottom:20rpx;">
+            <view>用户评价（2000）</view>
+            <view class="arrow">
+                <navigator hover-class="none" url="/pages/goodsShow-evaluation/goodsShow-evaluation">查看全部评价</navigator>
+            </view>
+        </view>
+    </view>
+    <view class="evaluation-contant">
+        <view class="evaluation-contant-top">
+            <view class="evaluation-contant-top-img">
+                <image src="/pages/img/center/user.jpeg"></image>
+            </view>
+            <view class="evaluation-contant-top-text">
+                <view>我的用户名字</view>
+                <view>好用就是好用，不要问太多</view>
+            </view>
+        </view>
+        <view class="evaluation-contant-show">
+            <image src="https://i1.mifile.cn/a2/1569411815_3771277_s1000_750wh.jpg"></image>
+            <image src="https://i1.mifile.cn/a2/1569583267_4149693_s954_2000wh.jpg"></image>
+            <image src="https://i1.mifile.cn/a2/1568888975_1168344_s1000_750wh.jpg"></image>
+            <image src="https://i1.mifile.cn/a2/1568953268_6807184_s3264_1504wh.jpg"></image>
+        </view>
+        <view class="evaluation-contant-ask">
+            2019-10-01
+            <view>
+                <text class="evaluation-contant-ask-text">
+                <text style="color:#eb5419;">官方回复：</text> 亲爱的用户我们会以最好的态度来对付你们，你们给我小心点，小米爱你们，你们可以的,感谢人你对小米的留言，小米永远爱你，希望你继续使用小米，我们会更好的改善了
+                </text>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 用户评价 结束 -->
+
+<!-- 详情 开始 -->
+<view class="details">
+    <view class="details-swiper-tab">
+        <view class="details-swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">概述</view>
+        <view class="details-swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">参数</view>
+    </view>
+
+    <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab" style='height:90%;'>
+        <swiper-item>
+            <scroll-view scroll-y="true" scroll-top="50" scroll-with-animation="ture" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" style="height:100%;">
+                <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2a8845451fc0f0588fcc7c386ea66a1a.jpg?f=webp&w=1080&h=1055&bg=202A34"></image>
+                <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4221fdb887597277e7221e64fcd28e59.jpg?f=webp&w=1080&h=921&bg=111E41"></image>
+                <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6e4b72843b5d1b915d5e9809683b8525.jpg?f=webp&w=1080&h=1026&bg=181822"></image>
+                <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7853421ec170b946b48316942983662a.jpg?f=webp&w=1080&h=970&bg=81243"></image>
+                <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/52768d2f9b3f8ce89bd1d4cd0d17bd8c.jpg?f=webp&w=1080&h=796&bg=A1A6B9"></image>
+                <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fef926c48cd4226f9441d70f65790c61.jpg?f=webp&w=1080&h=909&bg=20B1A"></image>
+                <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eead95bfa6c74d605571e43db08030ae.jpg?f=webp&w=1080&h=1033&bg=71329"></image>
+                <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a75fb6a54a2f49d7ceac1cb6203f0473.jpg?f=webp&w=1080&h=798&bg=A1A33"></image>
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <scroll-view scroll-y="true" scroll-top="50" scroll-with-animation="ture" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" style="height:100%;">
+                <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/21b1de573464acb0c43451831373bad4.jpg?f=webp&w=1080&h=2358&bg=0"></image>
+                <image src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8a73e4d9d7dec7dcdb2ec4e8611d4288.jpg?f=webp&w=1080&h=2506&bg=0"> </image>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>
+<!-- 详情 结束 -->
+
+<!-- 优惠券选择 弹窗 开始 -->
+<view class="display-cupon cupon-hide{{showView?'':'cupon-show'}}">
+    <!-- 遮罩 -->
+    <view class="display-cupon-black" bindtap="onChangeCuponShowState"></view>
+
+    <!-- 主要内容卡 开始 -->
+    <view class="dispaly-cupon-content">
+        <view class="dispaly-cupon-title">领券
+            <icon class="cupon-cancel" type="clear" size="50rpx" bindtap="onChangeShowState" />
+        </view>
+        <view class="dispaly-cupon-content-center center">
+            <!-- 立刻领取 开始 -->
+            <view class="dispaly-cupon-content-use">
+                <view class="dispaly-cupon-content-use-left center">
+                    <view>
+                        <text style="font-size:32rpx;">¥</text>
+                        <text style="font-size:50rpx;">15</text>
+                    </view>
+                    <view>满100可用</view>
+                </view>
+                <view class="dispaly-cupon-content-use-center center">
+                    <view>
+                        <view style="font-size:32rpx;color:#000;">有效期</view>
+                        <view>2019.11.11~2019.11.12</view>
+                    </view>
+                </view>
+                <view class="dispaly-cupon-content-use-right center">
+                    <view>立刻领取</view>
+                </view>
+            </view>
+            <!-- 立刻领取 结束 -->
+            <!-- 已领取 开始 -->
+            <view class="dispaly-cupon-content-used">
+                <view class="dispaly-cupon-content-used-left center">
+                    <view>
+                        <text style="font-size:32rpx;">¥</text>
+                        <text style="font-size:50rpx;">15</text>
+                    </view>
+                    <view>满100可用</view>
+                </view>
+                <view class="dispaly-cupon-content-used-center center">
+                    <view>
+                        <view style="font-size:32rpx;">有效期</view>
+                        <view>2019.11.11~2019.11.12</view>
+                    </view>
+                </view>
+                <view class="dispaly-cupon-content-used-right center">
+                    <view>已领取</view>
+                </view>
+                <image src="http://localhost:8080/img/cupon/优惠券已领取印.png"></image>
+            </view>
+            <!-- 已领取 结束 -->
+        </view>
+        <button bindtap="onChangeCuponShowState">取消</button>
+    </view>
+    <!-- 主要内容卡 结束 -->
+</view>
+<!-- 优惠券选择 弹窗 结束 -->
+
+<!-- 加入购物车 弹窗 开始 -->
+<view class="dispaly-addShopCar shopCar-hide{{shopCarShowView?'':'shopCar-show'}}">
+
+    <!-- 遮罩 -->
+    <view class="dispaly-addShopCar-black" bindtap="onChangeShopCarShowState"></view>
+    <!-- bindtap="hideModal" -->
+    <!-- 主要内容卡 开始 -->
+    <view class="dispaly-addShopCar-content">
+        <view class="dispaly-addShopCar-title">
+            <icon class="addshopCar-cancel" type="clear" size="50rpx" bindtap="onChangeShopCarShowState" />
+        </view>
+        <view class="dispaly-addshopCar-content-center center">
+            <view class="dispaly-addshopCar-content-center-title">
+                <image src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1567422901.77463175.jpg?thumb=1&w=80&h=80"></image>
+                <view>
+                    <view style="font-size:32rpx;">RedMi Note 8 8+256G 暮光蓝</view>
+                    <view style="font-size:24rpx;margin-top:10rpx;">¥1499.00</view>
+                </view>
+            </view>
+            <view class="dispaly-addshopCar-content-center-color">
+                <view class="content-center-title">颜色</view>
+                <view class="content-center-content">
+                    <view class="">
+                        <view class="disButton">黑色</view>
+                        <view class="disButton">白色</view>
+                        <view class="disButton">红色</view>
+
+                    </view>
+                </view>
+            </view>
+            <view class="dispaly-addshopCar-content-center-number">
+                <view class="content-center-title">规格</view>
+                <view class="content-center-content">
+                    <view class="">
+                        <view class="disButton">6+64G</view>
+                        <view class="disButton">6+128G</view>
+                        <view class="disButton">8+128G</view>
+                    </view>
+                </view>
+            </view>
+            <view class="dispaly-addshopCar-content-center-add">
+                <view>数量</view>
+                <view class="add-add">
+                    <view class="stepper">
+                        <!-- 减号 -->
+                        <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+                        <!-- 数值 -->
+                        <input type="number" bindinput='bindManual' value="{{num}}" />
+                        <!-- 加号 -->
+                        <text class="normal" bindtap="bindPlus">+</text>
+                    </view>
+                </view>
+            </view>
+            <view class='btn'>
+                <button class="add-button-add">加入购物车</button>
+                <!-- <button class="button-buy">立即购买</button> -->
+            </view>
+        </view>
+        <!-- 主要内容卡 结束 -->
+    </view>
+
+</view>
+<!-- 加入购物车 弹窗 结束 -->
+
+<!-- 立即购买 弹窗 开始 -->
+<view class="dispaly-buy buy-hide{{buyShowView?'':'buy-show'}}">
+    <!-- 遮罩 -->
+    <view class="dispaly-buy-black" bindtap="onChangeBuyShowState"></view>
+    <!-- bindtap="hideModal" -->
+    <!-- 主要内容卡 开始 -->
+    <view class="dispaly-buy-content">
+        <view class="dispaly-buy-title">
+            <icon class="buy-cancel" type="clear" size="50rpx" bindtap="onChangeBuyShowState" />
+        </view>
+        <view class="dispaly-buy-content-center center">
+            <view class="dispaly-buy-content-center-title">
+                <image src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1567422901.77463175.jpg?thumb=1&w=80&h=80"></image>
+                <view>
+                    <view style="font-size:32rpx;">RedMi Note 8 8+256G 暮光蓝</view>
+                    <view style="font-size:24rpx;margin-top:10rpx;">¥1499.00</view>
+                </view>
+            </view>
+            <view class="dispaly-buy-content-center-color">
+                <view class="content-center-title">颜色</view>
+                <view class="content-center-content">
+                    <view class="">
+                        <view class="disButton">黑色</view>
+                        <view class="disButton">白色</view>
+                        <view class="disButton">红色</view>
+
+                    </view>
+                </view>
+            </view>
+            <view class="dispaly-buy-content-center-number">
+                <view class="content-center-title">规格</view>
+                <view class="content-center-content">
+                    <view class="">
+                        <view class="disButton">6+64G</view>
+                        <view class="disButton">6+128G</view>
+                        <view class="disButton">8+128G</view>
+                    </view>
+                </view>
+            </view>
+            <view class="dispaly-buy-content-center-add">
+                <view>数量</view>
+                <view class="add-add">
+                    <view class="stepper">
+                        <!-- 减号 -->
+                        <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+                        <!-- 数值 -->
+                        <input type="number" bindinput='bindManual' value="{{num}}" />
+                        <!-- 加号 -->
+                        <text class="normal" bindtap="bindPlus">+</text>
+                    </view>
+                </view>
+            </view>
+            <view class='btn'>
+                <!-- <button class="add-button-add" bindtap="addCart">加入购物车</button> -->
+                <button class="buy-button-buy" bindtap="buy">立即购买</button>
+            </view>
+        </view>
+        <!-- 主要内容卡 结束 -->
+    </view>
+
+</view>
+<!-- 立即购买 弹窗 结束 -->
+
+<!-- 选择类型 开始 -->
+<view class="dispaly-chooseGoods chooseGoods-hide{{chooseGoodsShowView?'':'chooseGoods-show'}}">
+    shopCar-hide{{showView?'':'shopCar-show'}}
+    <!-- 遮罩 -->
+    <view class="dispaly-chooseGoods-black" bindtap="onChangeChooseGoodsShowState"></view>
+    bindtap="hideModal"
+    <!-- 主要内容卡 开始 -->
+    <view class="dispaly-chooseGoods-content">
+        <view class="dispaly-chooseGoods-title">
+            <icon class="chooseGoods-cancel" type="clear" size="50rpx" bindtap="onChangeChooseGoodsShowState" />
+        </view>
+        <view class="dispaly-chooseGoods-content-center center">
+            <view class="dispaly-chooseGoods-content-center-title">
+                <image src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1567422901.77463175.jpg?thumb=1&w=80&h=80"></image>
+                <view>
+                    <view style="font-size:32rpx;">RedMi Note 8 8+256G 暮光蓝</view>
+                    <view style="font-size:24rpx;margin-top:10rpx;">¥1499.00</view>
+                </view>
+            </view>
+            <view class="dispaly-chooseGoods-content-center-color">
+                <view class="content-center-title">颜色</view>
+                <view class="content-center-content">
+                    <view class="cell-items">
+                        <view class="disButton">黑色</view>
+                        <view class="disButton">白色</view>
+                        <view class="disButton">红色</view>
+
+                    </view>
+                </view>
+            </view>
+            <view class="dispaly-chooseGoods-content-center-number">
+                <view class="content-center-title">规格</view>
+                <view class="content-center-content">
+                    <view class="cell-items">
+                        <view class="disButton">6+64G</view>
+                        <view class="disButton">6+128G</view>
+                        <view class="disButton">8+128G</view>
+                    </view>
+                </view>
+            </view>
+            <view class="dispaly-chooseGoods-content-center-add">
+                <view>数量</view>
+                <view class="add-add">
+                    <view class="stepper">
+                        <!-- 减号 -->
+                        <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+                        <!-- 数值 -->
+                        <input type="number" bindinput='bindManual' value="{{num}}" />
+                        <!-- 加号 -->
+                        <text class="normal" bindtap="bindPlus">+</text>
+                    </view>
+                </view>
+            </view>
+            <view class='btn'>
+                <button class="button-add">加入购物车</button>
+                <button class="button-buy" bindtap="buy">立即购买</button>
+            </view>
+        </view>
+        <!-- 主要内容卡 结束 -->
+    </view>
+
+</view>
+<!-- 选择类型 结束 -->
+
+<!-- 尾部 开始 -->
+<view class="footer">
+    <view class="footer-img center" bindtap="add">
+        <image src="/pages/img/index/shopCar.png"></image>
+    </view>
+    <view class="footer-add center" data-goodsid="2" data-goodsname="小米2" bindtap="onChangeShopCarShowState">
+        <view>加入购物车</view>
+        <!-- class="shopCar-hide{{showView?'':'shopCar-show'}}"  bindtap="onChangeShowState" -->
+    </view>
+    <view class="footer-buy center" bindtap="onChangeBuyShowState">
+        <view>立即购买</view>
+    </view>
+</view>
+<!-- 尾部结束 -->

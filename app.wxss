@@ -1,0 +1,76 @@
+/**app.wxss**/
+/* 全局为#f3f3f3 */
+page{
+    background: #f3f3f3;
+}
+/* 居中 */
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* 字体超出隐藏 */
+.overText{
+     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 封装箭头属性 */
+.arrow{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.arrow::after{
+    content: "";
+    width: 16rpx;
+    height: 16rpx;
+    border-top: 3rpx solid #ccc;
+    border-right: 3rpx solid #ccc;
+    transform: rotate(45deg);
+}
+
+.arrow2{
+    display: flex;
+    /* justify-content:space-between; */
+    align-items: center;
+}
+.arrow2::after{
+    content: "";
+    width: 16rpx;
+    height: 16rpx;
+    border-top: 3rpx solid #ccc;
+    border-right: 3rpx solid #ccc;
+    transform: rotate(45deg);
+}
+
+.arrow1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.arrow1::after{
+    content: "";
+    width: 30rpx;
+    height: 30rpx;
+    border-top: 3rpx solid #ccc;
+    border-right: 3rpx solid #ccc;
+    transform: rotate(45deg);
+}
+
+/* 列表封装 */
+.cell{
+    font-size: 16px;
+    background-color: #fff;
+}
+.cell-items{
+    border-bottom: 1rpx solid #ddd;
+    /* padding: 20rpx 30rpx; */
+}
+
+button::after {
+  border: none;
+}

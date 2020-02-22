@@ -1,0 +1,703 @@
+/* pages/goodsShow/goodsShow.wxss */
+
+Page {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100%; *//* position: fixed; */
+    position: relative;
+}
+
+/* 头部 */
+
+.head {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 20rpx;
+    /* box-shadow: 0 5rpx 15rpx #c2c2c2; */
+}
+
+.head swiper {
+    width: 100%;
+    height: 750rpx;
+}
+
+.head swiper image {
+    height: 100%;
+    width: 100%;
+}
+
+.head-content {
+    padding: 20rpx;
+}
+
+.head-content-title {
+    font-size: 32rpx;
+    margin-bottom: 10rpx;
+    font-weight: bold;
+}
+
+.head-content-center {
+    font-size: 28rpx;
+    color: rgba(122, 122, 122, 1);
+    margin-bottom: 10rpx;
+}
+
+.head-content-price {
+    color: #d35b4b;
+    font-size: 32rpx;
+}
+
+/* 地址 */
+
+.address {
+    width: 100%;
+    background-color: #fff;
+    padding: 20rpx 0;
+    margin-bottom: 20rpx;
+    /* color: rgba(46, 46, 46, 0.4); *//* box-shadow: 0 5rpx 15rpx #c2c2c2; */
+}
+
+.address-target, .address-selected, .address-cupon {
+    /* width: 100%; */
+    padding: 0 20rpx;
+    margin-bottom: 20rpx;
+    font-size: 30rpx;
+}
+
+.address-cupon view {
+    display: flex;
+}
+
+.address-cupon view .cupon view {
+    margin-right: 10rpx;
+    width: 160rpx;
+    height: 40rpx;
+    /* background-image: url("http://localhost:8080/img/cupon/%E4%BC%98%E6%83%A0%E5%88%B8.png"); */
+    background: #f3f3f3;
+    border: 1rpx solid #c35352;
+    font-size: 20rpx;
+    color: #c35352;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rpx;
+}
+
+/* .address-target view:nth-child(1),.address-selected view > text{
+    font-size: 28rpx;
+    color: #6666;
+} */
+
+.address-commitment {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20rpx;
+}
+
+.address-commitment-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20rpx;
+    font-size: 24rpx;
+    color: #666;
+}
+
+/* 相关推荐 */
+
+.recommended {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: 20rpx;
+}
+
+.recommended-title {
+    text-align: center;
+    padding: 20rpx 0;
+    background-color: #fff;
+    color: #eb5419;
+}
+
+swiper {
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+}
+
+.scroll-view_H {
+    white-space: nowrap;
+    display: flex;
+    padding-left: 20rpx;
+}
+
+.scroll-view-item_H {
+    /* width: 340rpx; *//* height: 500rpx; */
+    margin-right: 24rpx;
+    display: inline-block;
+}
+
+.cotent {
+    padding: 20rpx;
+}
+
+.cotentTitle {
+    font-size: 24rpx;
+    font-weight: bold;
+}
+
+.cotentCotent {
+    font-size: 20rpx;
+    color: #a3a3a3;
+}
+
+.money {
+    color: #cb2d2c;
+    font-size: 24rpx;
+}
+
+.goods {
+    width: 260rpx;
+    background-color: #fff;
+    margin: 15rpx 0;
+    border-radius: 10rpx;
+    box-shadow: 0 5rpx 15rpx #c2c2c2;
+}
+
+.goods image {
+    margin-bottom: 15rpx;
+    height: 260rpx;
+    width: 100%;
+    border-radius: 10rpx;
+}
+
+/* 评价 */
+
+.evaluation {
+    background-color: #fff;
+    width: 100%;
+    padding: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.evaluation-head {
+    width: 93%;
+    font-size: 30rpx;
+    /* border-bottom: 1rpx solid #9999; */
+    padding: 20rpx 0rpx 0rpx 25rpx;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+
+.evaluation-head view {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rpx;
+}
+
+.evaluation-head view:nth-child(2) {
+    font-size: 24rpx;
+    color: #666;
+}
+
+.evaluation-contant {
+    padding: 0rpx 0rpx 0rpx 25rpx;
+    width: 90%;
+}
+
+.evaluation-contant-top {
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.evaluation-contant-top-img {
+    width: 70rpx;
+    height: 70rpx;
+    border: 3rpx solid #dddd;
+    border-radius: 50%;
+    margin-right: 30rpx;
+}
+
+.evaluation-contant-top-img image {
+    width: 70rpx;
+    height: 70rpx;
+}
+
+.evaluation-contant-top-text {
+    font-size: 24rpx;
+    color: #666;
+}
+
+.evaluation-contant-top-text view:nth-child(1) {
+    font-weight: bold;
+    font-size: 26rpx;
+    color: #000;
+}
+
+.evaluation-contant-show {
+    padding: 10rpx 0rpx 20rpx 20rpx;
+    display: flex;
+}
+
+.evaluation-contant-show image {
+    width: 20%;
+    height: 150rpx;
+    margin-right: 25rpx;
+}
+
+.evaluation-contant-ask {
+    padding-left: 10rpx;
+    width: 676rpx;
+    color: #666;
+    font-size: 20rpx;
+}
+
+.evaluation-contant-ask view {
+    background-color: #f3f3f3;
+    padding: 10rpx;
+}
+
+.evaluation-contant-ask-text {
+    width: 100%;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: pre-line;
+    font-size: 24rpx;
+    color: #000;
+}
+
+/* 详情 */
+
+.details {
+    width: 100%;
+    /* position: fixed; */
+    height: 100vh;
+    background-color: #fff;
+    margin-bottom: 100rpx;
+}
+
+.details-swiper-tab {
+    width: 100%;
+    /* border-bottom: 2rpx solid #ccc; */
+    text-align: center;
+    height: 60rpx;
+    line-height: 60rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-bottom: 20rpx;
+    padding-top: 10rpx;
+}
+
+.details-swiper-tab-item {
+    width: 33.33%;
+    color: #434343;
+    /* padding: 0 30rpx; */
+    margin: 0 150rpx;
+}
+
+.active {
+    color: #eb5419;
+    border-bottom: 4rpx solid #eb5419;
+}
+
+swiper {
+    text-align: center;
+}
+
+swiper swiper-item scroll-view {
+    font-size: 0;
+}
+
+/* 尾部 */
+
+.footer {
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.footer-img {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.footer-img image {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.footer-add, .footer-buy {
+    width: 325rpx;
+    color: #fff;
+}
+
+.footer-add {
+    background-color: #ea6835;
+}
+
+.footer-buy {
+    background-color: #e63d3c;
+}
+
+/* 弹窗公共格式 */
+
+/*使屏幕变暗  */
+
+.display-cupon-black, .dispaly-addShopCar-black, .dispaly-buy-black,
+.dispaly-chooseGoods-black {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(32, 32, 32);
+    opacity: 0.5;
+    overflow: hidden;
+    color: #fff;
+    
+}
+
+/* 弹窗格式 */
+
+.dispaly-cupon-content, .dispaly-addShopCar-content, .dispaly-buy-content,
+.dispaly-chooseGoods-content {
+    width: 94%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    padding: 10rpx 3%;
+    border-radius: 15rpx 15rpx 0rpx 0rpx;
+}
+
+/* 隐藏显示 */
+
+.cupon-hide, .shopCar-hide, .buy-hide, .chooseGoods-hide {
+    display: none;
+}
+
+.cupon-show, .shopCar-show, .buy-show, .chooseGoods-show {
+    display: block;
+}
+
+/* 优惠券弹窗 */
+
+.display-cupon-black {
+    z-index: 2;
+}
+
+.dispaly-cupon-content {
+    z-index: 3;
+}
+
+.dispaly-cupon-title {
+    text-align: center;
+    padding: 20rpx;
+    position: relative;
+    font-size: 38rpx;
+}
+
+.cupon-cancel {
+    position: absolute;
+    right: -15rpx;
+    top: 0;
+}
+
+.dispaly-cupon-content-center {
+    width: 100%;
+}
+
+.dispaly-cupon-content-use {
+    margin: 20rpx 0;
+    width: 600rpx;
+    height: 160rpx;
+    background-image: url('http://localhost:8080/img/cupon/优惠券领取.png');
+    background-size: 600rpx 160rpx;
+    display: flex;
+}
+
+.dispaly-cupon-content-use-left {
+    width: 178rpx;
+    height: 160rpx;
+    color: #ab3531;
+    font-size: 22rpx;
+}
+
+.dispaly-cupon-content-use-center {
+    width: 326rpx;
+    height: 160rpx;
+    font-size: 20rpx;
+    color: #656565;
+}
+
+.dispaly-cupon-content-use-center view view {
+    margin: 10rpx 0;
+}
+
+.dispaly-cupon-content-use-right {
+    width: 96rpx;
+    height: 160rpx;
+    color: #fff;
+    font-size: 26rpx;
+}
+
+.dispaly-cupon-content-use-right view {
+    width: 26rpx;
+}
+
+.dispaly-cupon-content-used {
+    margin: 20rpx 0;
+    width: 600rpx;
+    height: 160rpx;
+    background-image: url('http://localhost:8080/img/cupon/优惠券未领取.png');
+    background-size: 600rpx 160rpx;
+    display: flex;
+    color: #e6e6e6;
+    position: relative;
+}
+
+.dispaly-cupon-content-used-left {
+    width: 178rpx;
+    height: 160rpx;
+    font-size: 22rpx;
+}
+
+.dispaly-cupon-content-used-center {
+    width: 326rpx;
+    height: 160rpx;
+    font-size: 20rpx;
+    /* color: #656565; */
+}
+
+.dispaly-cupon-content-used-center view view {
+    margin: 10rpx 0;
+}
+
+.dispaly-cupon-content-used-right {
+    width: 96rpx;
+    height: 160rpx;
+    /* color: #fff; */
+    font-size: 26rpx;
+}
+
+.dispaly-cupon-content-used-right view {
+    width: 26rpx;
+}
+
+.dispaly-cupon-content-used image {
+    width: 130rpx;
+    height: 130rpx;
+    position: absolute;
+    right: 40rpx;
+    bottom: 15rpx;
+}
+
+.dispaly-cupon-content button {
+    margin: 20rpx 0;
+    border: 1rpx solid rgb(139, 139, 139, 0.4);
+}
+
+/* 加入购物车、立即购买、选择类型 */
+
+.dispaly-addShopCar-black {
+    z-index: 4;
+}
+
+.dispaly-addShopCar-content {
+    z-index: 5;
+}
+
+.dispaly-buy-black {
+    z-index: 6;
+}
+
+.dispaly-buy-content {
+    z-index: 7;
+}
+
+.dispaly-chooseGoods-black {
+    z-index: 8;
+}
+
+.dispaly-chooseGoods-content {
+    z-index: 9;
+}
+
+.dispaly-addShopCar-title, .dispaly-buy-title, .dispaly-chooseGoods-title {
+    width: 100%;
+    height: 30rpx;
+    position: relative;
+}
+
+.dispaly-addShopCar-title icon, .dispaly-buy-title icon,
+.dispaly-chooseGoods-title icon {
+    position: absolute;
+    right: -10rpx;
+}
+
+.dispaly-addshopCar-content-center, .dispaly-buy-content-center,
+.dispaly-chooseGoods-content-center {
+    padding: 20rpx;
+}
+
+.dispaly-addshopCar-content-center-title, .dispaly-buy-content-center-title,
+.dispaly-chooseGoods-content-center-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+
+.dispaly-addshopCar-content-center-title image,
+.dispaly-buy-content-center-title image,
+.dispaly-chooseGoods-content-center-title image {
+    width: 95rpx;
+    height: 95rpx;
+    margin-right: 20rpx;
+}
+
+/*选项内容公共样式*/
+
+.dispaly-addshopCar-content-center-color, .dispaly-addshopCar-content-center-add,
+.dispaly-addshopCar-content-center-number, .dispaly-buy-content-center-color,
+.dispaly-buy-content-center-add, .dispaly-buy-content-center-number,
+.dispaly-chooseGoods-content-center-color,
+.dispaly-chooseGoods-content-center-add,
+.dispaly-chooseGoods-content-center-number {
+    width: 100%;
+    font-size: 28rpx;
+    margin: 10rpx 0;
+}
+
+.content-center-title {
+    font-size: 30rpx;
+    font-weight: bold;
+}
+
+.content-center-content view {
+    display: flex;
+    color: #666;
+}
+
+.content-center-content view .disButton {
+    border: 1rpx solid #666;
+    border-radius: 10rpx;
+    margin: 10rpx;
+    padding: 10rpx 30rpx;
+}
+.content-center-content view .disButton-active{
+    border: 1rpx solid #f44336;
+    border-radius: 10rpx;
+    margin: 10rpx;
+    padding: 10rpx 30rpx;
+    color: #f44336;
+}
+
+.dispaly-addshopCar-content-center-add >view,
+.dispaly-buy-content-center-add >view,
+.dispaly-chooseGoods-content-center-add >view {
+    font-size: 30rpx;
+    font-weight: bold;
+}
+
+.dispaly-addshopCar-content-center-add, .dispaly-buy-content-center-add,
+.dispaly-chooseGoods-content-center-add {
+    margin: 20rpx 0 40rpx 0;
+}
+
+.dispaly-addshopCar-content-center-add .add-add,
+.dispaly-buy-content-center-add .add-add,
+.dispaly-chooseGoods-content-center-add .add-add {
+    margin-left: -470rpx;
+    margin-top: 20rpx;
+}
+
+/*数量加减样式*/
+
+/*主容器*/
+
+.stepper {
+    width: 70px;
+    height: 26px;
+    /*给主容器设一个边框*/
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+/*加号和减号*/
+
+.stepper text {
+    width: 19px;
+    line-height: 26px;
+    text-align: center;
+    float: left;
+}
+
+/*数值*/
+
+.stepper input {
+    padding: 0px;
+    width: 30px;
+    height: 26px;
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    /*给中间的input设置左右边框即可*/
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+/*普通样式*/
+
+.stepper .normal {
+    color: black;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button-add, .button-buy, .add-button-add, .buy-button-buy {
+    border: 0px;
+    color: #fff;
+    border-radius: 0px;
+}
+
+.button-add {
+    width: 50%;
+    background: #e96935;
+    margin: 0 5rpx;
+}
+
+.button-buy {
+    width: 50%;
+    background: #f44336;
+}
+
+.add-button-add {
+    width: 100%;
+    background: #e96935;
+}
+
+.buy-button-buy {
+    width: 100%;
+    background: #f44336;
+}

@@ -1,0 +1,8 @@
+<!--pages/login/login.wxml-->
+<image src="/pages/img/center/service.png"></image>
+
+<view class="content">
+    <view>申请获取以下权限</view>
+    <view style="font-size:30rpx;color:rgb(158, 158, 158);">获取你的公开信息（昵称、头像）</view>
+    <button>授权登录</button>
+</view>

@@ -1,0 +1,31 @@
+/* pages/center-service/center-service.wxss */
+pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.head{
+    width:100%;
+    /* padding: 30px; */
+    margin-top: 100rpx;
+    margin-bottom: 70rpx;
+}
+.head image{
+    width: 340rpx;
+    height: 340rpx;
+}
+
+.button{
+    width: 100%;
+    margin-bottom: 90rpx;
+}
+.button button{
+    width: 620rpx;
+    margin-top: 50rpx;
+    box-shadow: 0 10rpx 20rpx #b8b8b8;
+}
+.time{
+    font-size: 30rpx;
+    color: #666;
+}

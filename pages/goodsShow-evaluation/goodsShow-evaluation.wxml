@@ -1,0 +1,37 @@
+<!-- 用户评价 开始 -->
+<view class="evaluation">
+    <!-- <view class="evaluation-head">
+        <view class="cell-items">
+            <view>用户评价（2000）</view>
+            <view class="arrow">
+                <navigator>查看全部评价</navigator>
+            </view>
+        </view>
+    </view> -->
+    <view class="evaluation-contant">
+        <view class="evaluation-contant-top">
+            <view class="evaluation-contant-top-img">
+                <image src="/pages/img/center/user.jpeg"></image>
+            </view>
+            <view class="evaluation-contant-top-text">
+                <view>我的用户名字</view>
+                <view>好用就是好用，不要问太多</view>
+            </view>
+        </view>
+        <view class="evaluation-contant-show">
+            <image src="https://i1.mifile.cn/a2/1569411815_3771277_s1000_750wh.jpg"></image>
+            <image src="https://i1.mifile.cn/a2/1569583267_4149693_s954_2000wh.jpg"></image>
+            <image src="https://i1.mifile.cn/a2/1568888975_1168344_s1000_750wh.jpg"></image>
+            <image src="https://i1.mifile.cn/a2/1568953268_6807184_s3264_1504wh.jpg"></image>
+        </view>
+        <view class="evaluation-contant-ask">
+            2019-10-01
+            <view>
+                <text class="evaluation-contant-ask-text">
+                <text style="color:#eb5419;">官方回复：</text> 亲爱的用户我们会以最好的态度来对付你们，你们给我小心点，小米爱你们，你们可以的,感谢人你对小米的留言，小米永远爱你，希望你继续使用小米，我们会更好的改善了
+                </text>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 用户评价 结束 -->

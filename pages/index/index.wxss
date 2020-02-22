@@ -1,0 +1,196 @@
+/* pages/index/index.wxss */
+
+page {
+    background-color: #f3f3f3;
+}
+
+/* 轮播图 */
+.swiper_box {
+    width: 100%;
+    height: 420rpx;
+    position: relative;
+}
+
+.swipers {
+    height: 420rpx;
+}
+
+.swiper_box image {
+    width: 100%;
+    height: 420rpx;
+}
+
+/*用来包裹所有的小圆点  */
+.dots {
+    width: 130rpx;
+    height: 20rpx;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30rpx;
+}
+/*未选中时的小圆点样式 */
+.dot {
+    width: 23rpx;
+    height: 7rpx;
+    border-radius: 14rpx;
+    margin-right: 15rpx;
+    background-color: #fff;
+}
+/*选中以后的小圆点样式  */
+.active {
+    width: 23rpx;
+    height: 7rpx;
+    background-color: #08a267;
+}
+
+/* 导航栏 */
+.banner {
+    /* padding: 40rpx 0rpx; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    background-color: #fff;
+    /* margin-bottom: 20rpx; */
+}
+
+.banner image {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.banner view {
+    width: 20%;
+    padding: 40rpx 25rpx;
+    font-size: 22rpx;
+}
+
+.banner view image {
+    margin-bottom: 20rpx;
+}
+
+/* 人气推荐 商品展示 */
+/* 内容页公共样式 */
+.cotent {
+    padding: 20rpx;
+}
+
+.cotentTitle {
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+.cotentCotent {
+    font-size: 30rpx;
+    color: #a3a3a3;
+}
+
+.money {
+    color: #cb2d2c;
+    font-size: 32rpx;
+}
+
+.moneyAfter {
+    font-size: 30rpx;
+    color: rgba(116, 116, 116);
+    text-decoration: line-through;
+}
+
+.sentiment {
+    width: 710rpx;
+    margin: 0 20rpx;
+}
+
+
+/* 极品推荐 */
+.sentimentSection1 {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10rpx;
+}
+
+.sentimentSection1 .headerText {
+    font-size: 35rpx;
+    padding: 25rpx 0 30rpx 35rpx;
+    font-weight: bold;
+}
+
+.sentimentSection1 image {
+    width: 100%;
+    height: 245rpx;
+}
+
+
+/* 一般商品 */
+.sentimentSection2 {
+    margin-top: 10rpx;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sentimentSection2 navigator:nth-child(odd){
+    margin-right: 10rpx;
+}
+.goods {
+    width: 350rpx;
+    background-color: #fff;
+    margin-bottom: 10rpx;
+}
+
+.goods image {
+    margin-bottom: 15rpx;
+    width: 100%;
+    height: 330rpx;
+}
+
+
+/* 小白新闻 */
+.news{
+    background-color: #fff;
+    width: 710rpx;
+    margin: 20rpx;
+    border-radius: 10rpx;
+}
+.newsTitle{
+    padding:20rpx 50rpx 20rpx 30rpx; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.newsTitle > view{
+    font-size: 32rpx;
+    font-weight: bold;
+}
+.newsTitle navigator{
+    font-size: 26rpx;
+    color: #7d9cef;
+}
+.news image{
+    width: 100%;
+    height: 280rpx;
+}
+.newsFooterTitle{
+    padding: 20rpx 20rpx 0rpx 20rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newsFooterTitle view:nth-child(1){
+    width:90%;
+}
+.newsFooterTitle view:nth-child(2){
+    font-size: 26rpx;
+    color: #7d9cef;
+}
+.newsFooterTime{
+    padding: 0 20rpx 20rpx 20rpx;
+    font-size: 28rpx;
+    color: #a3a3a3;
+}
+
+

@@ -1,0 +1,111 @@
+<!--pages/index/index.wxml-->
+<!-- 头部信息 开始 -->
+<view style="margin-bottom:20rpx;">
+    <!-- 轮播图 开始 -->
+    <view class='swiper_box'>
+        <swiper class='swipers' interval="3500" autoplay="true" current="{{currentSwiper}}" bindchange="swiperChange">
+            <block wx:for="{{advimg}}" wx:key>
+                <swiper-item>
+                    <image class="swiper_image" src="{{item.url}}" lazy-load="true"></image>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="dots">
+            <block wx:for="{{advimg}}" wx:key>
+                <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view>
+            </block>
+        </view>
+    </view>
+    <!-- 轮播图 结束 -->
+    <!-- 导航栏 开始 -->
+    <!-- <view class="banner">
+        <view class="center"  wx:for="{{indexata}}" wx:key>
+            <navigator hover-class="none" url="">
+                <image src="{{item.url}}" lazy-load></image>
+            </navigator>
+            <text>{{item.name}}</text>
+        </view>
+    </view> -->
+    <!-- 导航栏 结束 -->
+</view>
+<!-- 头部信息 结束 -->
+<!-- 人气推荐 开始 -->
+<view class="sentiment">
+    <!-- 极品推荐开始 -->
+    <view class="sentimentSection1">
+        <view class="headerText">
+            <text>人气推荐</text>
+        </view>
+        <block wx:for="{{hots}}" wx:key>
+            <navigator hover-class="none"  url="/pages/goodsShow/goodsShow">
+                <image src="{{item.url}}"></image>
+                <view class="cotent">
+                    <view class="cotentTitle">
+                        <text>{{item.title}}</text>
+                    </view>
+                    <view class="cotentCotent  overText">
+                        <text>{{item.text}}</text>
+                    </view>
+                    <view>
+                        <text class="money" decode='true'>¥<text>{{item.price}}</text>&nbsp;&nbsp;&nbsp;</text>
+                        <text class="moneyAfter">¥<text>{{item.priceAfter}}</text></text>
+                    </view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+    <!-- 极品推荐 结束 -->
+    <!-- 一般商品推荐 开始 -->
+    <view class="sentimentSection2">
+        <block wx:for="{{goodsMessage}}" wx:key>
+            <navigator hover-class="none"  url="/pages/goodsShow/goodsShow">
+                <view class="goods">
+                    <image src="{{item.url}}"></image>
+                    <view class="cotent">
+                        <view class="cotentTitle">
+                            <text>{{item.title}}</text>
+                        </view>
+                        <view class="cotentCotent overText">
+                            <text>{{item.text}}</text>
+                        </view>
+                        <view>
+                            <text class="money">¥<text>{{item.price}}</text></text>
+                        </view>
+                    </view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+    <!-- 一般商品推荐 结束 -->
+</view>
+<!-- 人气推荐 结束 -->
+<!-- 小白新闻 开始 -->
+<view class="news">
+    <view class="newsTitle">
+        <view>
+            <text>小白新闻</text>
+        </view>
+        <navigator hover-class="none" url="/pages/news/news">
+            <view>
+                <text>更多内容></text>
+            </view>
+        </navigator>
+    </view>
+    <navigator hover-class="none" url=""><image src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2019/0925/20190925050026563.jpg"></image>
+    <view class="newsFooter">
+        <view class="newsFooterTitle">
+            <view  class="overText">
+                <text>9月25日，米家正式推出旗下第二款电暖器产品——米家电暖器温控版。在延续初代高颜值外观的同时，这款新品在性能方面获得全面提升。</text>
+            </view>
+            <view>
+                <!-- <navigator hover-class="none" url=""><text>全文></text></navigator> -->
+            </view>
+        </view>
+        <view class="newsFooterTime">
+            <text decode='true'>09-24&nbsp;&nbsp;&nbsp;</text>
+            <text>10:24</text>
+        </view>
+    </view>
+    </navigator>
+</view>
+<!-- 小白新闻 结束 -->

@@ -1,0 +1,106 @@
+/* pages/goodsShow-evaluation/goodsShow-evaluation.wxss */
+/* 评价 */
+Page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 750rpx;
+    /* height: 100%; *//* position: fixed; */
+    /* position: relative; */
+}
+
+.evaluation {
+    margin-top: 20rpx;
+    background-color: #fff;
+    width: 100%;
+    padding: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.evaluation-head {
+    width: 93%;
+    font-size: 30rpx;
+    /* border-bottom: 1rpx solid #9999; */
+    padding: 20rpx 0rpx 0rpx 25rpx;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+
+.evaluation-head view {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rpx;
+}
+
+.evaluation-head view:nth-child(2) {
+    font-size: 24rpx;
+    color: #666;
+}
+
+.evaluation-contant {
+    width: 93%;
+    padding: 0rpx 20rpx 0rpx 25rpx;
+    /* width: 100%; */
+}
+
+.evaluation-contant-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.evaluation-contant-top-img {
+    width: 70rpx;
+    height: 70rpx;
+    border: 3rpx solid #dddd;
+    border-radius: 50%;
+    margin-right: 30rpx;
+}
+
+.evaluation-contant-top-img image {
+    width: 70rpx;
+    height: 70rpx;
+}
+
+.evaluation-contant-top-text {
+    font-size: 24rpx;
+    color: #666;
+}
+
+.evaluation-contant-top-text view:nth-child(1) {
+    font-weight: bold;
+    font-size: 26rpx;
+    color: #000;
+}
+
+.evaluation-contant-show {
+    padding: 10rpx 20rpx 20rpx 20rpx;
+    display: flex;
+}
+
+.evaluation-contant-show image {
+    width: 20%;
+    height: 150rpx;
+    margin-right: 25rpx;
+}
+
+.evaluation-contant-ask {
+    width: 676rpx;
+    color: #666;
+    font-size: 20rpx;
+}
+
+.evaluation-contant-ask view {
+    background-color: #f3f3f3;
+    padding: 10rpx;
+}
+
+.evaluation-contant-ask-text {
+    width: 100%;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: pre-line;
+    font-size: 24rpx;
+    color: #000;
+}

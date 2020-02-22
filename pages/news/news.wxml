@@ -1,0 +1,71 @@
+<!--pages/news/news.wxml-->
+<!-- 新闻编辑 -->
+<view class="time">2019-10-01    13:00</view>
+<navigator hover-class="none" url="#">
+    <view class="content">
+        <view>
+            <image class="content-head" src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2019/0925/20190925050026563.jpg"></image>
+        </view>
+        <view class="cont-footer">
+            <view class="overText">
+                <text>9月25日，米家正式推出旗下第二款电暖器产品——米家电暖器温控版。在延续初代高颜值外观的同时，这款新品在性能方面获得全面提升。</text>
+            </view>
+        </view>
+    </view>
+</navigator>
+
+<view class="time">2019-10-01    13:00</view>
+<navigator hover-class="none" url="#">
+    <view class="content">
+        <view>
+            <image class="content-head" src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2019/0925/20190925050026563.jpg"></image>
+        </view>
+        <view class="cont-footer">
+            <view class="overText">
+                <text>9月25日，米家正式推出旗下第二款电暖器产品——米家电暖器温控版。在延续初代高颜值外观的同时，这款新品在性能方面获得全面提升。</text>
+            </view>
+        </view>
+    </view>
+</navigator>
+
+<view class="time">2019-10-01    13:00</view>
+<navigator hover-class="none" url="#">
+    <view class="content">
+        <view>
+            <image class="content-head" src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2019/0925/20190925050026563.jpg"></image>
+        </view>
+        <view class="cont-footer">
+            <view class="overText">
+                <text>9月25日，米家正式推出旗下第二款电暖器产品——米家电暖器温控版。在延续初代高颜值外观的同时，这款新品在性能方面获得全面提升。</text>
+            </view>
+        </view>
+    </view>
+</navigator>
+
+<view class="time">2019-10-01    13:00</view>
+<navigator hover-class="none" url="#">
+    <view class="content">
+        <view>
+            <image class="content-head" src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2019/0925/20190925050026563.jpg"></image>
+        </view>
+        <view class="cont-footer">
+            <view class="overText">
+                <text>9月25日，米家正式推出旗下第二款电暖器产品——米家电暖器温控版。在延续初代高颜值外观的同时，这款新品在性能方面获得全面提升。</text>
+            </view>
+        </view>
+    </view>
+</navigator>
+
+<view class="time">2019-10-01    13:00</view>
+<navigator hover-class="none" url="#">
+    <view class="content">
+        <view>
+            <image class="content-head" src="http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2019/0925/20190925050026563.jpg"></image>
+        </view>
+        <view class="cont-footer">
+            <view class="overText">
+                <text>9月25日，米家正式推出旗下第二款电暖器产品——米家电暖器温控版。在延续初代高颜值外观的同时，这款新品在性能方面获得全面提升。</text>
+            </view>
+        </view>
+    </view>
+</navigator>

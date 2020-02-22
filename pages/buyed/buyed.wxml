@@ -1,0 +1,98 @@
+<!--pages/buyed/buyed.wxml-->
+<!-- 头部 开始 -->
+<view class="head center">
+    <view class="headBack"></view>
+    <view class="user center">
+        <view class="user-text arrow1">
+            <view bindtap="address">
+                <view style="margin-bottom:10rpx;">
+                    <text decode="ture">13631531230&nbsp;&nbsp;老王&nbsp;&nbsp;收</text>
+                </view>
+                <view>广东省佛山市三水区乐平镇范湖开发区广州工商学院菜鸟驿站</view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 头部 结束 -->
+<!-- 商品 开始 -->
+<view class='cartallview'>
+    <view class="cart-box" wx:for="{{cartsdata}}" wx:key="{{index}}" wx:for-index="idx">
+        <!-- wx:for 购物车信息列表 头部商家名称 -->
+        <!-- <view class='storehed'>   
+            <icon  type="{{item.selected ? 'success':'circle'}}" bindtap="storeselected" data-index="{{idx}}" />
+            <text>{{item.storename}}</text>
+        </view> -->
+        <!-- goodslist -->
+        <view>
+            <!-- 商品组键 -->
+            <view class='shopgoodlist' wx:for="{{item.goodsinfo}}" wx:key="{{index}}">
+                <!-- wx:if 是否选择显示不同图标 -->
+                <icon type="{{item.selected ? 'success':'circle'}}" bindtap="goodsselected" data-index="{{index}}" data-select-index="{{idx}}" size="40rpx" color="#f54028" />
+                <!-- 点击商品图片可跳转到商品详情 -->
+                <image class="cart-thumb" src="{{item.url}}" />
+                <view class='goodsdata'>
+                    <text class='goodsname' decode='true'>{{item.goodsname}}&nbsp;{{item.color}}&nbsp;{{item.space}}</text>
+                    <view>
+                        <text class='price' decode='true'>¥{{item.price}}&nbsp;&nbsp;&nbsp;&nbsp;</text>
+                        <text class="priceAfter">已省¥{{item.priceDiscount}}</text>
+                    </view>
+                    <!-- 增加减少数量按钮 -->
+                    <view class='goodsnum'>
+                        <text style="font-size:20rpx;border:1rpx solid #9999;background:#f3f3f3;" bindtap="minusCount" data-index="{{index}}" data-select-index="{{idx}}" bindtap='minusCount'>-</text>
+                        <text style="font-size:20rpx; border:1rpx solid #9999;">{{item.num}}</text>
+                        <text style="font-size:20rpx;border:1rpx solid #9999;background:#f3f3f3;" bindtap="addCount" data-index="{{index}}" data-select-index="{{idx}}" bindtap='addCount'>+</text>
+                    </view>
+                </view>
+                <icon class="cancel" type="clear" size="30rpx" />
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 商品 结束 -->
+<!-- 配送方式 开始 -->
+<view class="content">
+    <view>
+        <view class="cell-items">
+            <view>配送方式</view>
+            <view class="arrow">快递</view>
+        </view>
+    </view>
+    <view>
+        <view class="cell-items">
+            <view>优惠券</view>
+            <view class="arrow" bindtap="cupon">无可用优惠券</view>
+        </view>
+    </view>
+</view>
+<!-- 配送 方式 结束 -->
+
+<!-- 结算列表 开始 -->
+<view class="footer">
+    <view class="footer-head">
+        <view>
+            <text>商品总金额</text>
+            <text>¥{{allprices}}</text>
+        </view>
+        <!-- <view>
+            <text>优惠金额</text>
+            <text>¥299</text>
+        </view> -->
+        <!-- <view>
+            <text>优惠券</text>
+            <text  style="color:rgb(126, 126, 126);">-¥0</text>
+        </view> -->
+        <view>
+            <text>运费</text>
+            <text style="color:rgb(126, 126, 126);">¥10</text>
+        </view>
+    </view>
+</view>
+<view class="footer-footer">
+        <view>
+            <text>应付金额</text>
+            <text>¥{{allprices}}</text>
+        </view>
+    </view>
+<!-- 结算列表 结束 -->
+
+<button class="bottom">结算</button>

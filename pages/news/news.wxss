@@ -1,0 +1,28 @@
+/* pages/news/news.wxss */
+Page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.time{
+    font-size: 26rpx;
+    color: #808080;
+    margin-top: 40rpx;
+}
+.content{
+    width: 700rpx;
+    background-color: #fff;
+    margin: 10rpx 0 40rpx 0;
+    border-radius: 15rpx;
+    box-shadow: 0 5rpx 15rpx #c2c2c2;
+}
+.content-head{
+    width: 100%;
+    height: 290rpx;
+    border-radius: 15rpx;
+}
+.cont-footer{
+    padding: 30rpx;
+    font-size: 28rpx;
+}

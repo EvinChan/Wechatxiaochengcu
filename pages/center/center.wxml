@@ -1,0 +1,146 @@
+<!--pages/center/center.wxml-->
+<!-- 头部信息 开始 -->
+<view class="head">
+    <view class="head-text">
+    <view>我的名字</view>
+    <view style="color:#666;font-size:30rpx;">id:65464646</view>
+    </view>
+    <image src="/pages/img/center/user.jpeg"></image>
+</view>
+<!-- <navigator hover-class="none">
+    <view class="map-myself center">
+        <button class="map-button" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+            <image class="head-img1" src="pages/img/center/user.jepg"></image>
+            <view class="userinfo-nickname">个人中心</view>
+        </button>
+        <block wx:else>
+            <cover-image class="map-myself-img" src="{{userInfo.avatarUrl}}" mode="cover"></cover-image>
+            <cover-view class="userinfo-nickname">个人中心</cover-view>
+        </block>
+    </view>
+</navigator> -->
+<!-- 头部信息 结束 -->
+<!-- banner栏开始 -->
+<view class="banner">
+
+    <view class="bannerContent">
+        <navigator hover-class="none" class="center" url="/pages/center-buyedList/center-buyedList">
+            <image src="/pages/img/center/dingdan.png"></image>
+            <text>订单</text>
+        </navigator>
+    </view>
+
+
+    <view class="bannerContent">
+        <navigator hover-class="none" class="center" url="/pages/center-buyedList/center-buyedList">
+            <image src="/pages/img/center/daifahuo.png"></image>
+            <text>待发货</text>
+        </navigator>
+    </view>
+
+
+    <view class="bannerContent">
+        <navigator hover-class="none" class="center" url="/pages/center-buyedList/center-buyedList">
+            <image src="/pages/img/center/daishouhuo.png"></image>
+            <text>待收货</text>
+        </navigator>
+    </view>
+
+
+    <view class="bannerContent">
+        <navigator hover-class="none" class="center" url="/pages/center-buyedList/center-buyedList">
+            <image src="/pages/img/center/more.png"></image>
+            <text>全部订单</text>
+        </navigator>
+    </view>
+
+</view>
+<!-- banner栏 结束 -->
+<!-- 模块栏 开始 -->
+<view class="menu">
+    <view class="menuTitle">个人设置</view>
+    <view class="menuContent">
+        <view class="menuNav">
+            <navigator hover-class="none">
+                <view class="menuNavImg cell-items">
+                    <view>
+                        <image src="/pages/img/center/dizhi.png"></image>
+                        <text>我的地址</text>
+                    </view>
+                    <view class="arrow" style="font-size:36rpx;padding-right:30rpx;"></view>
+                </view>
+            </navigator>
+        </view>
+
+        <view class="menuNav">
+            <navigator hover-class="none" url="/pages/center-center/center-center">
+                <view class="menuNavImg cell-items">
+                    <view>
+                        <image src="/pages/img/center/会员.png"></image>
+                        <text>会员中心</text>
+                    </view>
+                    <view class="arrow" style="font-size:36rpx;padding-right:30rpx;"></view>
+                </view>
+            </navigator>
+        </view>
+
+        <view class="menuNav">
+            <navigator hover-class="none" url="/pages/center-cupon/center-cupon">
+                <view class="menuNavImg cell-items">
+                    <view>
+                        <image src="/pages/img/center/优惠券.png"></image>
+                        <text>我的优惠券</text>
+                    </view>
+                    <view class="arrow" style="font-size:36rpx;padding-right:30rpx;"></view>
+                </view>
+            </navigator>
+        </view>
+
+
+    </view>
+</view>
+
+<view class="menu">
+    <view class="menuTitle">其他设置</view>
+    <view class="menuContent">
+        <view class="menuNav">
+            <navigator hover-class="none" url="/pages/center-service/center-service">
+                <view class="menuNavImg cell-items">
+                    <view>
+                        <image src="/pages/img/center/yonghu.png"></image>
+                        <text>在线客服</text>
+                    </view>
+                    <view class="arrow" style="font-size:36rpx;padding-right:30rpx;"></view>
+                </view>
+            </navigator>
+        </view>
+
+        <view class="menuNav">
+            <navigator hover-class="none"   url="/pages/center-setting/center-setting">
+                <view class="menuNavImg cell-items">
+                    <view>
+                        <image src="/pages/img/center/订单.png"></image>
+                        <text>设置</text>
+                    </view>
+                    <view  class="arrow" style="font-size:36rpx;padding-right:30rpx;"></view>
+                </view>
+            </navigator>
+        </view>
+        <view class="menuNav">
+            <navigator hover-class="none" url="/pages/center-setting/center-setting">
+                <view class="menuNavImg cell-items">
+                    <view>
+                        <image src="/pages/img/center/dingdan.png"></image>
+                        <text>商城使用说明</text>
+                    </view>
+                    <view class="arrow" style="font-size:36rpx;padding-right:30rpx;"></view>
+                </view>
+            </navigator>
+        </view>
+
+
+    </view>
+</view>
+<!-- 模块栏 结束 -->
+
+<view class="footer">没有更多了....</view>

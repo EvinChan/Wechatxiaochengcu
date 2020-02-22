@@ -1,0 +1,32 @@
+/* pages/shopCar-empty/shopCar-empty.wxss */
+Page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+image{
+    width: 450rpx;
+    height: 450rpx;
+    margin-top: 100rpx;
+}
+.title{
+    margin-top: 40rpx;
+    font-size: 40rpx;
+    font-weight: bold;
+}
+.tips{
+    width: 60%;
+    font-size: 30rpx;
+    margin-top: 25rpx;
+    color: #666;
+    text-align: center;
+}
+.button-orange{
+    margin-top: 51rpx;
+    width: 360rpx;
+    box-shadow: 5rpx 0rpx 10rpx rgb(163, 163, 163);
+    border-radius: 20rpx;
+    background: #e96935;
+    color: #fff;
+}

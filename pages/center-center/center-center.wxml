@@ -1,0 +1,8 @@
+<!--pages/center-center/center-center.wxml-->
+<view class="content">
+    <!-- <view class="button arrow2" bindtap="centerNumber">积分商城</view> -->
+    <view class="number center">
+        <view style="font-size:86rpx;">999</view>
+        <view style="letter-spacing:5rpx;">我的积分</view>
+    </view>
+</view>

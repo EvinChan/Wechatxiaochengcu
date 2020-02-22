@@ -1,0 +1,7 @@
+<!--pages/search-search/search-search.wxml-->
+<view class="head center">
+    <view class="headInput">
+        <image src="/pages/img/search/suosou.png"></image>
+        <input focus="" type="text" placeholder="搜索商品"></input>
+    </view>
+</view>

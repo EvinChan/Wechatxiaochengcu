@@ -1,0 +1,127 @@
+page {
+    width: 100%;
+    height: 100%;
+    dsposition: fixed;
+    background-color: #f3f3f3;
+}
+
+.details-swiper-tab {
+    width: 100%;
+    /* border-bottom: 2rpx solid #ccc; */
+    text-align: center;
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 10rpx 0;
+    font-size: 26rpx;
+    background-color: #fff;
+}
+
+.details-swiper-tab-item {
+    width: 20%;
+    color: #434343;
+    /* padding: 0 30rpx; */
+    margin: 0 20rpx;
+}
+
+.active {
+    color: #eb5419;
+    border-bottom: 4rpx solid #eb5419;
+}
+
+swiper {
+    text-align: center;
+}
+
+swiper swiper-item scroll-view {
+    width: 100%;
+}
+
+/* 未使用 */
+
+.content {
+    margin: 20rpx 25rpx;
+    width: 700rpx;
+    height: 210rpx;
+    background: url("http://localhost:8080/img/cupon/优惠券未使用.png");
+    background-size: 700rpx 210rpx;
+    display: flex;
+    
+}
+
+.content-left {
+    width: 470rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-left-content {
+    width: 180rpx;
+    margin-left: 20rpx;
+}
+
+.content-right {
+    width: 230rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    
+}
+
+.content-right-time {
+    margin-top: 15rpx;
+    width: 190rpx;
+    font-size: 24rpx;
+    font-stretch:narrower;
+}
+/* 已使用 */
+.contented {
+    margin: 20rpx 25rpx;
+    width: 700rpx;
+    height: 210rpx;
+    background: url("http://localhost:8080/img/cupon/优惠券已使用.png");
+    background-size: 700rpx 210rpx;
+    display: flex;
+    position: relative;
+}
+
+.contented-left {
+    width: 470rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e6e6e6;
+}
+
+.contented-left-content {
+    width: 180rpx;
+    margin-left: 20rpx;
+}
+
+.contented-right {
+    width: 230rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #6c6c6c;
+}
+
+.contented-right-time {
+    margin-top: 15rpx;
+    width: 190rpx;
+    font-size: 24rpx;
+}
+.contented-img image{
+    width: 150rpx;
+    height: 150rpx;
+    position: absolute;
+    z-index: 1;
+    top: 30rpx;
+    right: 160rpx;
+}

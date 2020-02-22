@@ -1,0 +1,390 @@
+<!--pages/center-buyedList/center-buyedList.wxml-->
+<view class="details-swiper-tab">
+    <view class="details-swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">待付款</view>
+    <view class="details-swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">待发货</view>
+    <view class="details-swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">待收货</view>
+    <view class="details-swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">待评价</view>
+    <view class="details-swiper-tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="clickTab">全部订单</view>
+</view>
+
+<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab" style='height:100%;'>
+    <!-- 待付款 开始 -->
+    <swiper-item style='height:100%;'>
+        <scroll-view scroll-y="true" scroll-top="50" scroll-with-animation="ture" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" style="height:100%;">
+            <view class="content">
+                <!-- 头部 开始 -->
+                <view class="content-head">
+                    <view class="content-head-left">
+                        <image src="/pages/img/center/时间.png"></image>
+                        <text>2019.10.01|13:00</text>
+                    </view>
+                    <view class="content-head-rigth">待付款</view>
+                </view>
+                <!-- 头部 结束 -->
+                <!-- 订单详情 开始 -->
+                <navigator hover-class="none">
+                    <view class="content-detail">
+                        <view class="content-detail-left">
+                            <image src="http://i1.mifile.cn/a1/pms_1567422901.77463175.jpg?width=60&height=60"></image>
+                            <view>
+                                <view class="content-detail-left-title">Redmi Note 8</view>
+                                <view style="margin-left:-40rpx;margin-bottom:10rpx;">类别：电子商品</view>
+                                <view style="margin-left:-20rpx;">状态：未支付</view>
+                            </view>
+                        </view>
+                        <view class="content-detail-rigth">
+                            <view class="content-detail-rigth-price">¥999.99</view>
+                            <view class="">x1</view>
+                        </view>
+                    </view>
+                </navigator>
+                <!-- 订单详情 结束 -->
+                <!-- 订单状态 开始 -->
+                <view class="content-footer">
+                    <view class="content-footer-left" style="color:#e96935">等待您的支付</view>
+                    <view class="content-footer-right">
+                        <button>取消订单</button>
+                        <button bindtap="buy">支付订单</button>
+                    </view>
+                </view>
+                <!-- 订单状态 结束 -->
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <!-- 待付款 结束 -->
+    <!-- 待发货 开始 -->
+    <swiper-item style='height:100%;'>
+        <scroll-view scroll-y="true" scroll-top="50" scroll-with-animation="ture" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" style="height:100%;">
+            <view class="content">
+                <!-- 头部 开始 -->
+                <view class="content-head">
+                    <view class="content-head-left">
+                        <image src="/pages/img/center/时间.png"></image>
+                        <text>2019.10.01|13:00</text>
+                    </view>
+                    <view class="content-head-rigth">待发货</view>
+                </view>
+                <!-- 头部 结束 -->
+                <!-- 订单详情 开始 -->
+                <navigator hover-class="none">
+                    <view class="content-detail">
+                        <view class="content-detail-left">
+                            <image src="http://i1.mifile.cn/a1/pms_1567422901.77463175.jpg?width=60&height=60"></image>
+                            <view>
+                                <view class="content-detail-left-title">Redmi Note 8</view>
+                                <view style="margin-left:-40rpx;margin-bottom:10rpx;">类别：电子商品</view>
+                                <view style="margin-left:-20rpx;">状态：已支付</view>
+                            </view>
+                        </view>
+                        <view class="content-detail-rigth">
+                            <view class="content-detail-rigth-price">¥999.99</view>
+                            <view class="">x1</view>
+                        </view>
+                    </view>
+                </navigator>
+                <!-- 订单详情 结束 -->
+                <!-- 订单状态 开始 -->
+                <view class="content-footer">
+                    <view class="content-footer-left" style="color:#e96935">正在发货中</view>
+                    <view class="content-footer-right">
+                        <button>取消订单</button>
+                        <button>提醒发货</button>
+                    </view>
+                </view>
+                <!-- 订单状态 结束 -->
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <!-- 待发货 结束 -->
+
+    <!-- 待收货 开始 -->
+    <swiper-item style='height:100%;'>
+        <scroll-view scroll-y="true" scroll-top="50" scroll-with-animation="ture" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" style="height:100%;">
+            <view class="content">
+                <!-- 头部 开始 -->
+                <view class="content-head">
+                    <view class="content-head-left">
+                        <image src="/pages/img/center/时间.png"></image>
+                        <text>2019.10.01|13:00</text>
+                    </view>
+                    <view class="content-head-rigth">待收货</view>
+                </view>
+                <!-- 头部 结束 -->
+                <!-- 订单详情 开始 -->
+                <navigator hover-class="none">
+                    <view class="content-detail">
+                        <view class="content-detail-left">
+                            <image src="http://i1.mifile.cn/a1/pms_1567422901.77463175.jpg?width=60&height=60"></image>
+                            <view>
+                                <view class="content-detail-left-title">Redmi Note 8</view>
+                                <view style="margin-left:-40rpx;margin-bottom:10rpx;">类别：电子商品</view>
+                                <view style="margin-left:-20rpx;">状态：已揽件</view>
+                            </view>
+                        </view>
+                        <view class="content-detail-rigth">
+                            <view class="content-detail-rigth-price">¥999.99</view>
+                            <view class="">x1</view>
+                        </view>
+                    </view>
+                </navigator>
+                <!-- 订单详情 结束 -->
+                <!-- 订单状态 开始 -->
+                <view class="content-footer">
+                    <view class="content-footer-left" style="color:#e96935">等待确认收货</view>
+                    <view class="content-footer-right">
+                        <button bindtap="logsitic">查看物流</button>
+                        <button>确认收货</button>
+                    </view>
+                </view>
+                <!-- 订单状态 结束 -->
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <!-- 待收货 结束 -->
+    <!-- 待评价 开始 -->
+    <swiper-item style='height:100%;'>
+        <scroll-view scroll-y="true" scroll-top="50" scroll-with-animation="ture" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" style="height:100%;">
+            <view class="content">
+                <!-- 头部 开始 -->
+                <view class="content-head">
+                    <view class="content-head-left">
+                        <image src="/pages/img/center/时间.png"></image>
+                        <text>2019.10.01|13:00</text>
+                    </view>
+                    <view class="content-head-rigth">待评价</view>
+                </view>
+                <!-- 头部 结束 -->
+                <!-- 订单详情 开始 -->
+                <navigator hover-class="none">
+                    <view class="content-detail">
+                        <view class="content-detail-left">
+                            <image src="http://i1.mifile.cn/a1/pms_1567422901.77463175.jpg?width=60&height=60"></image>
+                            <view>
+                                <view class="content-detail-left-title">Redmi Note 8</view>
+                                <view style="margin-left:-40rpx;margin-bottom:10rpx;">类别：电子商品</view>
+                                <view style="margin-left:-20rpx;">物流状态：已送达</view>
+                            </view>
+                        </view>
+                        <view class="content-detail-rigth">
+                            <view class="content-detail-rigth-price">¥999.99</view>
+                            <view class="">x1</view>
+                        </view>
+                    </view>
+                </navigator>
+                <!-- 订单详情 结束 -->
+                <!-- 订单状态 开始 -->
+                <view class="content-footer">
+                    <view class="content-footer-left" style="color:#e96935">等待您的支付</view>
+                    <view class="content-footer-right">
+                        <button  bindtap="evaluation">评价</button>
+                        <button>退货</button>
+                    </view>
+                </view>
+                <!-- 订单状态 结束 -->
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <!-- 待评价 结束 -->
+    <!-- 全部订单开始 -->
+    <swiper-item style='height:100%;'>
+        <scroll-view scroll-y="true" scroll-top="50" scroll-with-animation="ture" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" style="height:100%;">
+            <view class="content">
+                <!-- 头部 开始 -->
+                <view class="content-head">
+                    <view class="content-head-left">
+                        <image src="/pages/img/center/时间.png"></image>
+                        <text>2019.10.01|13:00</text>
+                    </view>
+                    <view class="content-head-rigth">代付款</view>
+                </view>
+                <!-- 头部 结束 -->
+                <!-- 订单详情 开始 -->
+                <navigator hover-class="none">
+                    <view class="content-detail">
+                        <view class="content-detail-left">
+                            <image src="http://i1.mifile.cn/a1/pms_1567422901.77463175.jpg?width=60&height=60"></image>
+                            <view>
+                                <view class="content-detail-left-title">Redmi Note 8</view>
+                                <view style="margin-left:-40rpx;margin-bottom:10rpx;">类别：电子商品</view>
+                                <view style="margin-left:-20rpx;">物流状态：未支付</view>
+                            </view>
+                        </view>
+                        <view class="content-detail-rigth">
+                            <view class="content-detail-rigth-price">¥999.99</view>
+                            <view class="">x1</view>
+                        </view>
+                    </view>
+                </navigator>
+                <!-- 订单详情 结束 -->
+                <!-- 订单状态 开始 -->
+                <view class="content-footer">
+                    <view class="content-footer-left" style="color:#e96935">等待您的支付</view>
+                    <view class="content-footer-right">
+                        <button>取消订单</button>
+                        <button>支付订单</button>
+                    </view>
+                </view>
+                <!-- 订单状态 结束 -->
+            </view>
+
+            <view class="content">
+                <!-- 头部 开始 -->
+                <view class="content-head">
+                    <view class="content-head-left">
+                        <image src="/pages/img/center/时间.png"></image>
+                        <text>2019.10.01|13:00</text>
+                    </view>
+                    <view class="content-head-rigth">待评价</view>
+                </view>
+                <!-- 头部 结束 -->
+                <!-- 订单详情 开始 -->
+                <navigator hover-class="none">
+                    <view class="content-detail">
+                        <view class="content-detail-left">
+                            <image src="http://i1.mifile.cn/a1/pms_1567422901.77463175.jpg?width=60&height=60"></image>
+                            <view>
+                                <view class="content-detail-left-title">Redmi Note 8</view>
+                                <view style="margin-left:-40rpx;margin-bottom:10rpx;">类别：电子商品</view>
+                                <view style="margin-left:-20rpx;">物流状态：已送达</view>
+                            </view>
+                        </view>
+                        <view class="content-detail-rigth">
+                            <view class="content-detail-rigth-price">¥999.99</view>
+                            <view class="">x1</view>
+                        </view>
+                    </view>
+                </navigator>
+                <!-- 订单详情 结束 -->
+
+                <!-- 订单状态 开始 -->
+                <view class="content-footer">
+                    <view class="content-footer-left" style="color:#e96935">等待您的支付</view>
+                    <view class="content-footer-right">
+                        <!-- <button>取消订单</button> -->
+                        <button  bindtap="evaluation">评价</button>
+                        <button>退货</button>
+                    </view>
+                </view>
+                <!-- 订单状态 结束 -->
+            </view>
+
+            <view class="content">
+                <!-- 头部 开始 -->
+                <view class="content-head">
+                    <view class="content-head-left">
+                        <image src="/pages/img/center/时间.png"></image>
+                        <text>2019.10.01|13:00</text>
+                    </view>
+                    <view class="content-head-rigth">待收货</view>
+                </view>
+                <!-- 头部 结束 -->
+                <!-- 订单详情 开始 -->
+                <navigator hover-class="none">
+                    <view class="content-detail">
+                        <view class="content-detail-left">
+                            <image src="http://i1.mifile.cn/a1/pms_1567422901.77463175.jpg?width=60&height=60"></image>
+                            <view>
+                                <view class="content-detail-left-title">Redmi Note 8</view>
+                                <view style="margin-left:-40rpx;margin-bottom:10rpx;">类别：电子商品</view>
+                                <view style="margin-left:-20rpx;">物流状态：已揽件</view>
+                            </view>
+                        </view>
+                        <view class="content-detail-rigth">
+                            <view class="content-detail-rigth-price">¥999.99</view>
+                            <view class="">x1</view>
+                        </view>
+                    </view>
+                </navigator>
+                <!-- 订单详情 结束 -->
+                <!-- 订单状态 开始 -->
+                <view class="content-footer">
+                    <view class="content-footer-left" style="color:#e96935">等待确认收货</view>
+                    <view class="content-footer-right">
+                        <button>查看物流</button>
+                        <button>确认收货</button>
+                    </view>
+                </view>
+                <!-- 订单状态 结束 -->
+            </view>
+
+            <view class="content">
+                <!-- 头部 开始 -->
+                <view class="content-head">
+                    <view class="content-head-left">
+                        <image src="/pages/img/center/时间.png"></image>
+                        <text>2019.10.01|13:00</text>
+                    </view>
+                    <view class="content-head-rigth">待发货</view>
+                </view>
+                <!-- 头部 结束 -->
+                <!-- 订单详情 开始 -->
+                <navigator hover-class="none">
+                    <view class="content-detail">
+                        <view class="content-detail-left">
+                            <image src="http://i1.mifile.cn/a1/pms_1567422901.77463175.jpg?width=60&height=60"></image>
+                            <view>
+                                <view class="content-detail-left-title">Redmi Note 8</view>
+                                <view style="margin-left:-40rpx;margin-bottom:10rpx;">类别：电子商品</view>
+                                <view style="margin-left:-20rpx;">物流状态：已支付</view>
+                            </view>
+                        </view>
+                        <view class="content-detail-rigth">
+                            <view class="content-detail-rigth-price">¥999.99</view>
+                            <view class="">x1</view>
+                        </view>
+                    </view>
+                </navigator>
+                <!-- 订单详情 结束 -->
+                <!-- 订单状态 开始 -->
+                <view class="content-footer">
+                    <view class="content-footer-left" style="color:#e96935">正在发货中</view>
+                    <view class="content-footer-right">
+                        <button>取消订单</button>
+                        <button>提醒发货</button>
+                    </view>
+                </view>
+                <!-- 订单状态 结束 -->
+            </view>
+
+            <view class="content">
+                <!-- 头部 开始 -->
+                <view class="content-head">
+                    <view class="content-head-left">
+                        <image src="/pages/img/center/时间.png"></image>
+                        <text>2019.10.01|13:00</text>
+                    </view>
+                    <view class="content-head-rigth">待付款</view>
+                </view>
+                <!-- 头部 结束 -->
+                <!-- 订单详情 开始 -->
+                <navigator hover-class="none">
+                    <view class="content-detail">
+                        <view class="content-detail-left">
+                            <image src="http://i1.mifile.cn/a1/pms_1567422901.77463175.jpg?width=60&height=60"></image>
+                            <view>
+                                <view class="content-detail-left-title">Redmi Note 8</view>
+                                <view style="margin-left:-40rpx;margin-bottom:10rpx;">类别：电子商品</view>
+                                <view style="margin-left:-20rpx;">物流状态：未支付</view>
+                            </view>
+                        </view>
+                        <view class="content-detail-rigth">
+                            <view class="content-detail-rigth-price">¥999.99</view>
+                            <view class="">x1</view>
+                        </view>
+                    </view>
+                </navigator>
+                <!-- 订单详情 结束 -->
+                <!-- 订单状态 开始 -->
+                <view class="content-footer">
+                    <view class="content-footer-left" style="color:#e96935">等待您的支付</view>
+                    <view class="content-footer-right">
+                        <button>取消订单</button>
+                        <button>支付订单</button>
+                    </view>
+                </view>
+                <!-- 订单状态 结束 -->
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <!-- 全部订单 结束 -->
+</swiper>
